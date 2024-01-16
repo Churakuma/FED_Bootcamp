@@ -18,23 +18,37 @@
 </head>
 <body class="bg-dark bg-home">
 
-  <div class="header container text-white">
-    <p><a>00 Home</a></p>
-    <p><a>01 Destination</a></p>
-    <p><a>02 Crew</a></p>
-    <p><a>03 Technology</a></p>
-  </div>
+  <header class="flex primary-navigation-bar">
+    <div>
+      <img class="logo" src="../starter-code/assets/shared/logo.svg">
+    </div>
+
+    <div class="bg-blurred">
+      <ul class="flex primary-navigation-buttons">
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2">00 Home</a></li>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2">01 Destination</a></li>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2">02 Crew</a></li>
+        <li><a class="ff-sans-cond uppercase text-white letter-spacing-2">03 Technology</a></li>
+      </ul>
+    </div>
+    
+  </header> 
+
+  <main class="flex page-content">
+    <div class="container text-content">
+      <h5 class="ff-sans-cond fs-500 text-accent uppercase letter-spacing-1">So, you want to travel to</h5>
+      <h1 class="ff-serif fs-900 text-white uppercase">Space</h1>
+      <p class="ff-sans-normal fs-300 text-accent">
+        Let’s face it; if you want to go to space, you might as well genuinely go to 
+        outer space and not hover kind of on the edge of it. Well sit back, and relax 
+        because we’ll give you a truly out of this world experience!
+      </p>
+    </div>
   
 
-  <h5 class="ff-sans-cond fs-500 text-accent">So, you want to travel to</h5>
-  <h1 class="ff-serif fs-900 text-white">Space</h1>
-  <p class="ff-sans-normal fs-300 text-accent">
-    Let’s face it; if you want to go to space, you might as well genuinely go to 
-    outer space and not hover kind of on the edge of it. Well sit back, and relax 
-    because we’ll give you a truly out of this world experience!
-  </p>
-
-  <button>Explore</button>
+  <button class="large-button uppercase ff-serif text-dark bg-white fs-600">Explore</button>
+  </main>
+  
 
 </body>
 </html>

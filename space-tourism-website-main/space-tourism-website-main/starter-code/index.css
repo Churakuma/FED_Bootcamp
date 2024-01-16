@@ -56,6 +56,10 @@ body {
     min-height: 100vh;
 }
 
+header {
+    
+}
+
 /* Make images easier to work with */
 img,
 picture {
@@ -90,7 +94,8 @@ select {
 
 .flex {
     display: flex;
-    gap: var(--gap, 1rem)
+    gap: var(--gap, 1rem);
+    flex-wrap: wrap;
 }
 
 .grid {
@@ -102,11 +107,6 @@ select {
     padding-inline: 2em;
     max-width: 80rem;
     margin-inline: auto;
-}
-
-.header {
-    display: flex;
-    
 }
 
 /* Accessibility Screen reader only */
@@ -147,9 +147,90 @@ select {
 .fs-300 { font-size: var(--fs-300); }
 .fs-200 { font-size: var(--fs-200); }
 
+.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; } 
+
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* Components */
+
+/* NOTE - Don't understand the position properties affect on the button */
+.large-button {
+    font-size: 2rem;
+    position: relative;
+    z-index: 1;
+    display: inline-grid;
+    place-items: center;
+    padding: 0 2em;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    text-decoration: none;
+    border: none;
+}
+
+/* NOTE - Didn't understand how this works in terms of content property and transition */
+.large-button::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: hsl( var(--clr-white) / .1);
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 500ms linear, transform 750ms ease-in-out;
+}
+
+.large-button:hover:after {
+    opacity: 1;
+    transform: scale(1.5);
+}
+
+.primary-navigation-bar {
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0px 0px 0px;
+    margin: 0;
+}
+
+.primary-navigation-buttons {
+    float: right;
+    list-style: none;
+    padding: 24px 180px 24px 80px;
+}
+
+.bg-blurred {
+    backdrop-filter: blur(1.5rem);
+}
+
+.logo {
+    padding-left: 50px;
+}
+
 /* Home */
 
 .bg-home {
     background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
     background-size: cover;
+}
+
+.text-content {
+    width: 100%;
+    max-width: 550px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.page-content {
+    padding-right: 240px;
+    padding-top: 360px;
 }

@@ -156,7 +156,9 @@ select {
 
 .uppercase { text-transform: uppercase; }
 
-/* Components */
+/* --------------------  */
+/* Components            */
+/* --------------------  */
 
 /* NOTE - Don't understand the position properties affect on the button */
 .large-button {
@@ -191,15 +193,19 @@ select {
 }
 
 .primary-navigation-bar {
-    justify-content: space-between;
     align-items: center;
     padding: 50px 0px 0px 0px;
     margin: 0;
+    flex-wrap: nowrap;
+    position: absolute;
+    width: 100%;
+    max-width: 1;
 }
 
 .primary-navigation-buttons {
     float: right;
     list-style: none;
+    flex-wrap: nowrap;
     padding: 24px 180px 24px 80px;
 }
 
@@ -221,6 +227,7 @@ select {
 
 .logo {
     padding-left: 50px;
+    flex-shrink: 0;
 }
 
 .text-content {
@@ -234,6 +241,14 @@ select {
 .page-content {
     padding-right: 240px;
     padding-top: 360px;
+}
+
+.header-bar {
+    height: 1px;
+    width: 100%;
+    max-width: 473px;
+    z-index: 1;
+    margin: 0px 0px 0px 20px;
 }
 
 /* Page Specific Content */
@@ -253,4 +268,22 @@ select {
     max-width: 445px;
     height: 100%;
     max-height: 445px;
+}
+
+@media (min-width: 45em) {
+    
+    .primary-navigation-bar::after {
+        content: '';
+        display: block;
+        position: relative;
+        height: 1px;
+        width: 100%;
+        margin-right: -2.5rem;
+        background: hsl( var(--clr-white) / .25);
+        order: 1;
+    }
+
+    .bg-blurred {
+        order: 2;
+    }
 }

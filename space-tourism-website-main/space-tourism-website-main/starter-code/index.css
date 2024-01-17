@@ -160,7 +160,6 @@ select {
 /* Components            */
 /* --------------------  */
 
-/* NOTE - Don't understand the position properties affect on the button */
 .large-button {
     font-size: 2rem;
     position: relative;
@@ -174,7 +173,6 @@ select {
     border: none;
 }
 
-/* NOTE - Didn't understand how this works in terms of content property and transition */
 .large-button::after {
     content: '';
     position: absolute;
@@ -194,12 +192,11 @@ select {
 
 .primary-navigation-bar {
     align-items: center;
-    padding: 50px 0px 0px 0px;
+    padding: 50px 0px 50px 0px;
     margin: 0;
     flex-wrap: nowrap;
-    position: absolute;
+    position: relative;
     width: 100%;
-    max-width: 1;
 }
 
 .primary-navigation-buttons {
@@ -207,6 +204,8 @@ select {
     list-style: none;
     flex-wrap: nowrap;
     padding: 24px 180px 24px 80px;
+    white-space: nowrap;
+    gap: 48px;
 }
 
 .primary-navigation-buttons a {
@@ -239,8 +238,12 @@ select {
 }
 
 .page-content {
-    padding-right: 240px;
-    padding-top: 360px;
+    padding: 240px 240px 0; /* Adjust padding values */
+    max-width: 100%; /* Ensure it takes the full width of the viewport */
+    box-sizing: border-box; /* Include padding in the width */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .header-bar {
@@ -270,6 +273,10 @@ select {
     max-height: 445px;
 }
 
+/* --------------------  */
+/* Media Queries         */
+/* --------------------  */
+
 @media (min-width: 45em) {
     
     .primary-navigation-bar::after {
@@ -286,4 +293,28 @@ select {
     .bg-blurred {
         order: 2;
     }
+}
+
+@media (max-width: 1080px) {
+
+    .page-content {
+        padding: 50px 20px 0; /* Adjust padding values */
+        max-width: 100%; /* Ensure it takes the full width of the viewport */
+        box-sizing: border-box; /* Include padding in the width */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 100px;
+    }
+
+    .primary-navigation-buttons {
+        float: right;
+        list-style: none;
+        flex-wrap: nowrap;
+        padding: 24px 120px 24px 80px;
+        white-space: nowrap;
+        gap: 24px;
+    }
+
 }

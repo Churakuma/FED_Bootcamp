@@ -261,28 +261,42 @@ TODO: Review this:
 }
 
 .page-content {
-    padding: 240px 240px 0; /* Adjust padding values */
-    max-width: 100%; /* Ensure it takes the full width of the viewport */
-    box-sizing: border-box; /* Include padding in the width */
+    padding: 50px 20px 0;
+    max-width: 100%;
+    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
+    gap: 100px;
 }
 
-.header-bar {
-    height: 1px;
-    width: 100%;
-    max-width: 473px;
-    z-index: 1;
-    margin: 0px 0px 0px 20px;
-}
+/* --------------------       */
+/* Page Specific background   */
+/* --------------------       */
 
-/* Page Specific Content */
-
-.bg-home {
-    background-image: url(../starter-code/assets/home/background-home-desktop.jpg);
+body {
     background-size: cover;
+    background-position: bottom center;
 }
+
+/* Home */
+.home {
+    background-image: url(./assets/home/background-home-mobile.jpg);
+}
+
+@media (min-width: 425px) {
+    .home {
+        background-position: center center;
+        background-image: url(./assets/home/background-home-tablet.jpg);
+    }
+}
+
+@media (min-width: 1025px) {
+    .home {
+        background-image: url(./assets/home/background-home-desktop.jpg);
+    }
+} 
 
 .bg-destination {
     background-image: url(../starter-code/assets/destination/background-destination-desktop.jpg);
@@ -300,7 +314,9 @@ TODO: Review this:
 /* Media Queries         */
 /* --------------------  */
 
-@media (min-width: 45em) {
+/* Mobile */
+
+@media (min-width: 425px) {
     
     .primary-navigation-bar::after {
         content: '';
@@ -318,17 +334,61 @@ TODO: Review this:
     }
 }
 
-@media (max-width: 1080px) {
+@media (min-width: 425px) {
 
     .page-content {
-        padding: 50px 20px 0; /* Adjust padding values */
-        max-width: 100%; /* Ensure it takes the full width of the viewport */
-        box-sizing: border-box; /* Include padding in the width */
+        padding: 50px 20px 0;
+        max-width: 100%;
+        box-sizing: border-box;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
         gap: 100px;
+        text-align: center;
+    }
+
+    .primary-navigation-buttons {
+        float: right;
+        list-style: none;
+        flex-wrap: nowrap;
+        padding: 24px 120px 24px 80px;
+        white-space: nowrap;
+        gap: 24px;
+    }
+
+}
+
+/* Tablet */
+
+@media (min-width: 1025px) {
+    
+    .primary-navigation-bar::after {
+        content: '';
+        display: block;
+        position: relative;
+        height: 1px;
+        width: 100%;
+        margin-right: -2.5rem;
+        background: hsl( var(--clr-white) / .25);
+        order: 1;
+    }
+
+    .bg-blurred {
+        order: 2;
+    }
+}
+
+@media (min-width: 1025px) {
+
+    .page-content {
+        padding: 240px 240px 0; /* Adjust padding values */
+        max-width: 100%; /* Ensure it takes the full width of the viewport */
+        box-sizing: border-box; /* Include padding in the width */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
     }
 
     .primary-navigation-buttons {

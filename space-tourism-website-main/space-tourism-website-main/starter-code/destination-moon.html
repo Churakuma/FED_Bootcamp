@@ -18,12 +18,10 @@
 <body class="bg-dark bg-destination">
 
   <header class="flex primary-navigation-bar">
-    <div>
-      <img class="logo" src="../starter-code/assets/shared/logo.svg">
-    </div>
-
+    
+    <img class="logo" src="../starter-code/assets/shared/logo.svg">   
     <div class="bg-blurred">
-      <ul class="flex primary-navigation-buttons">
+      <ul class="flex primary-navigation-buttons underline-indicators">
         <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="index.html">00 Home</a></li>
         <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="destination-moon.html">01 Destination</a></li>
         <li><a class="ff-sans-cond uppercase text-white letter-spacing-2" href="crew-commander.html">02 Crew</a></li>
@@ -31,34 +29,38 @@
       </ul>
     </div>
     
-  </header>
+  </header> 
 
-  <h5 class="ff-sans-cond fs-500 text-white uppercase letter-spacing-1">01 Pick your destination</h5>
-  <div>
-    <img src="../starter-code/assets/destination/image-moon.png" alt="Moon">
-  </div>
+  <main class="flex page-content">
+    <div class="image-content">
+      <h5 class="ff-sans-cond fs-500 text-white uppercase letter-spacing-1">01 Pick your destination</h5>
+      <img class="moon-img" src="../starter-code/assets/destination/image-moon.png" alt="Moon">
+    </div>  
 
-  <div class="flex text-content">
+    <div class="text-content">
 
-    <ul class="flex secondary-navigation-buttons">
-      <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2 fs-500" href="destination-moon.html">Moon</a></li>
-      <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2 fs-500" href="destination-mars.html">Mars</a></li>
-      <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2 fs-500" href="destination-europa.html">Europa</a></li>
-      <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2 fs-500" href="destination-titan.html">Titan</a></li>
-    </ul>
+      <ul class="flex secondary-navigation-buttons underline-indicators">
+        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2 fs-500" href="destination-moon.html">Moon</a></li>
+        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2 fs-500" href="destination-mars.html">Mars</a></li>
+        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2 fs-500" href="destination-europa.html">Europa</a></li>
+        <li><a class="ff-sans-cond uppercase text-accent letter-spacing-2 fs-500" href="destination-titan.html">Titan</a></li>
+      </ul>
 
-      <h2 class="ff-sans-cond fs-900 text-white">Moon</h2>
+        <h2 class="ff-sans-cond fs-900 text-white">Moon</h2>
 
-      See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
-      regain perspective and come back refreshed. While you’re there, take in some history 
-      by visiting the Luna 2 and Apollo 11 landing sites.
+        <p class="ff-sans-normal fs-300 text-accent">
+          See our planet as you’ve never seen it before. A perfect relaxing trip away to help 
+          regain perspective and come back refreshed. While you’re there, take in some history 
+          by visiting the Luna 2 and Apollo 11 landing sites.
+        </p>
 
-      Avg. distance
-      384,400 km
+        <h3 class="uppercase fs-300 text-accent">Avg. distance</h3>
+        <p class="ff-serif uppercase text-white">384,400 km</p>
 
-      Est. travel time
-      3 days
-  </div>
+        <h3 class="uppercase fs-300 text-accent">Est. travel time</h3>
+        <p class="ff-serif uppercase text-white">3 days</p>
+    </div>
+  </main>
   
 </body>
 </html>

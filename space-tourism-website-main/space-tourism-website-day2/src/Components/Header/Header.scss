@@ -1,1 +1,16 @@
+@import url('../../GlobalStyles.scss');
 
+.primary-navigation-bar {
+  align-items: center;
+  padding: 50px 0 50px 0;
+  margin: 0;
+  flex-wrap: nowrap;
+  position: relative;
+  width: 100%;
+  background-color: bg-dark;
+}
+
+.tabs-list > li {
+  list-style: none;
+  font-family: ff-sans-cond;
+}

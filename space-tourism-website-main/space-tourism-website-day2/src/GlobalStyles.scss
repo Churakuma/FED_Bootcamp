@@ -1,19 +1,122 @@
-// Fonts-families
-$ff-serif: 'Bellefair Regular', serif;
-$ff-sans-cond: 'Barlow Condensed', sans-serif;
-$ff-sans-normal: 'Barlow', sans-serif;
+// globalStyles.scss
 
-// Colors
-$clr-dark: 230 35% 7%;
-$clr-light: 231 77% 90%;
-$clr-white: 0 0% 100%;
+:root {
+    /* Colors */
+    --clr-dark: 230, 35%, 7%;
+    --clr-light: 231, 77%, 90%;
+    --clr-white: 0, 0%, 100%;
+  
+    /* Font-families */
+    --ff-serif: "Bellefair Regular", serif;
+    --ff-sans-cond: "Barlow Condensed", sans-serif;
+    --ff-sans-normal: "Barlow", sans-serif;
+  
+    /* Font-sizes */
+    --fs-900: 9.375rem;
+    --fs-800: 6.25rem;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+  }
+  
+  /* colors */
+  
+  .bg-dark {
+    background-color: hsl(var(--clr-dark));
+  }
+  
+  .bg-accent {
+    background-color: hsl(var(--clr-light));
+  }
+  
+  .bg-white {
+    background-color: hsl(var(--clr-white));
+  }
+  
+  .text-dark {
+    color: hsl(var(--clr-dark));
+  }
+  
+  .text-accent {
+    color: hsl(var(--clr-light));
+  }
+  
+  .text-white {
+    color: hsl(var(--clr-white));
+  }
+  
+.letter-spacing-1 { letter-spacing: 4.75px; } 
+.letter-spacing-2 { letter-spacing: 2.7px; } 
+.letter-spacing-3 { letter-spacing: 2.35px; } 
 
-// Font-sizes
-$fs-900: 9.375rem;
-$fs-800: 6.25rem;
-$fs-700: 3.5rem;
-$fs-600: 2rem;
-$fs-500: 1.75rem;
-$fs-400: 1.125rem;
-$fs-300: 1rem;
-$fs-200: 0.875rem;
+.fs-900,
+.fs-800,
+.fs-700,
+.fs-600 {
+    line-height: 1.1;
+}
+
+.uppercase { text-transform: uppercase; }
+
+/* --------------------  */
+/* Reset                 */
+/* --------------------  */
+
+/* https://piccalil.li/blog/a-modern-css-reset/ */
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+/* Set up the body */
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Make form elements easier to work with */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove animations for people who have turned them off */
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {  
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}

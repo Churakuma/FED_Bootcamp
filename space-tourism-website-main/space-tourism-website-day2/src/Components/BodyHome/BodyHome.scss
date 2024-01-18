@@ -7,4 +7,16 @@ body {
 
 .home {
     background-image: url(../assets/home/background-home-mobile.jpg);
+    flex-shrink: 0;
+
+    // Tablet
+    @media (min-width: 425px) {
+        background-position: center center;        
+        background-image: url(../assets/home/background-home-tablet.jpg);
+    }
+
+    // Desktop
+    @media (min-width: 1025px) {
+        background-image: url(../assets/home/background-home-desktop.jpg);
+    }
 }

@@ -1,0 +1,88 @@
+// Import the global styles to access the global variables
+@import '../../GlobalStyles.scss';
+
+// TODO: Factorise and reorganise the selectors using nesting
+
+.title {
+    font-family: $ff-serif;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 4.75px;
+    color: $clr-white;
+}
+
+.subtitle {
+    font-family: $ff-sans-cond;
+    font-weight: 400;
+    color: $clr-light;
+    text-align: center;
+    letter-spacing: 2.7px;
+}
+
+.text {
+    font-family: $ff-sans-normal;
+    color: $clr-light;
+    text-align: center;
+    font-size: $fs-200;
+    font-weight: 400;
+}
+
+// Mobile Layout (Default)
+@media (max-width: 425px) {
+
+    .text-container {
+        padding: 7rem 1.5rem;
+    }
+
+    .subtitle {
+        font-size: $fs-300;
+    }
+
+    .title {
+        font-size: $fs-750;
+    }
+
+    .text {
+        font-size: $fs-200;
+    }
+}
+
+@media (min-width: 426px) {
+    .subtitle {
+        font-family: $ff-sans-cond;
+        font-weight: 400;
+        font-size: $fs-400;
+        color: $clr-light;
+        text-align: center;
+        letter-spacing: 2.7px;
+    }
+
+    .title {
+        font-family: $ff-serif;
+        font-weight: 400;
+        font-size: $fs-900;
+        color: $clr-white;
+        text-align: center;
+        letter-spacing: 4.75px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .subtitle {
+        font-family: $ff-sans-cond;
+        font-weight: 400;
+        font-size: $fs-500;
+        color: $clr-light;
+        text-align: center;
+        letter-spacing: 2.7px;
+    }
+
+    .title {
+        font-family: $ff-serif;
+        font-weight: 400;
+        font-size: $fs-900;
+        color: $clr-white;
+        text-align: center;
+        letter-spacing: 4.75px;
+    }
+}

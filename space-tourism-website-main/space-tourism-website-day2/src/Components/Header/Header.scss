@@ -12,9 +12,27 @@
 
 .tabs-list {
   width: 51.9rem;
-  height: 6rem;
+  height: 100%;
   backdrop-filter: blur(1.5rem);
   justify-content: space-evenly;
+  flex-direction: column;
   align-items: center;
   list-style: none;
+  margin-top: 6rem;
 }
+
+.logo {
+  width: 2.5rem;
+  height: 2.5rem;
+  flex-shrink: 0;
+  margin-left: 1.5rem;
+  top: 1.5rem;
+  position: relative;
+}
+
+/* --------------------  */
+/* Media Queries         */
+/* --------------------  */
+
+// Desktop
+

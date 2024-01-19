@@ -1,0 +1,31 @@
+@import url('../../GlobalStyles.scss');
+
+.navIcon {
+    width: 55px;
+    display: flex;
+    top: 1rem;  
+    position: relative;
+    margin-left: 17rem;
+    z-index: 10;
+}
+
+.sideMenu {
+    right: 0;
+    height: 100%;
+    width: 260px;
+    position: fixed;
+    background: none;
+    transition: all 0.35s ease-out;
+    backdrop-filter: blur(1.5rem);
+    z-index: 9;
+    
+}
+
+.sideMenu a {
+    display: flex;
+    align-content: flex-start;
+    text-decoration: none;
+    font-weight: 200;
+    padding: 1rem 1.6rem;
+}
+

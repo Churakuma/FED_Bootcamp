@@ -144,6 +144,11 @@ picture {
 body {
   line-height: 1.5;
   min-height: 100vh;
+  height: 100%;
+}
+
+#root {
+  height: 100vh;
 }
 
 // Make images easier to work with

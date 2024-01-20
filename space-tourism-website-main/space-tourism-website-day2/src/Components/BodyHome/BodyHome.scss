@@ -1,13 +1,11 @@
 @import url('../../GlobalStyles.scss');
 
-body {
+.home {
     background-size: cover;
     background-position: bottom center;
-}
-
-.home {
     background-image: url(../assets/home/background-home-mobile.jpg);
     flex-shrink: 0;
+    height: 100%;
 
     // Tablet
     @media (min-width: 425px) {
@@ -16,7 +14,7 @@ body {
     }
 
     // Desktop
-    @media (min-width: 1025px) {
+    @media (min-width: 1024px) {
         background-image: url(../assets/home/background-home-desktop.jpg);
     }
 }

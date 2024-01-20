@@ -54,7 +54,7 @@ export default function SideMenu() {
             </svg>
         </span>
 
-        <div className="sideMenu ff-sans-cond" style={{ right: isSideMenu ? '0px' : '-260px' }}>
+        <div className="sideMenu ff-sans-cond" style={{ right: isSideMenu ? '0px' : '-262px' }}>
             <ul className='tabs-list'>
                 <li><a className='text-white' href="#">00 Home</a></li>
                 <li><a className='text-white' href="#">01 Destination</a></li>

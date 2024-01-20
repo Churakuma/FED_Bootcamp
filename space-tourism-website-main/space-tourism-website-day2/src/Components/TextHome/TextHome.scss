@@ -3,12 +3,14 @@
 
 // TODO: Factorise and reorganise the selectors using nesting
 
+// Mobile Layout (Default)
 .title {
     font-family: $ff-serif;
     font-weight: 400;
     text-align: center;
     letter-spacing: 4.75px;
     color: $clr-white;
+    font-size: $fs-750;
 }
 
 .subtitle {
@@ -17,6 +19,7 @@
     color: $clr-light;
     text-align: center;
     letter-spacing: 2.7px;
+    font-size: $fs-300;
 }
 
 .text {
@@ -27,24 +30,8 @@
     font-weight: 400;
 }
 
-// Mobile Layout (Default)
-@media (max-width: 425px) {
-
-    .text-container {
-        padding: 7rem 1.5rem;
-    }
-
-    .subtitle {
-        font-size: $fs-300;
-    }
-
-    .title {
-        font-size: $fs-750;
-    }
-
-    .text {
-        font-size: $fs-200;
-    }
+.text-container {
+    padding: 3rem 1.5rem;
 }
 
 @media (min-width: 426px) {

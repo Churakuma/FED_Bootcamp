@@ -6,14 +6,13 @@ import TextHome from "../TextHome/TextHome";
 
 const BodyHome = () => {
     return (
-        <body className="bg-dark home">
+        <div className="bg-dark home">
             <>
                 <Header></Header>
                 <TextHome></TextHome>
                 <LargeButton></LargeButton>
             </>
-            
-        </body>
+        </div>
     )
 }
 

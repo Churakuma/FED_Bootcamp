@@ -1,5 +1,6 @@
 import './SideMenu.scss'
 import React, { useState, useEffect, useRef } from 'react'
+import { Link } from 'react-router-dom';
 
 export default function SideMenu() {
     // State to manage the visibility of the side menu
@@ -56,8 +57,8 @@ export default function SideMenu() {
 
         <div className="sideMenu ff-sans-cond" style={{ right: isSideMenu ? '0px' : '-262px' }}>
             <ul className='tabs-list'>
-                <li><a className='text-white' href="#">00 Home</a></li>
-                <li><a className='text-white' href="#">01 Destination</a></li>
+                <li><Link className='text-white' to={'/'}>00 Home</Link></li>
+                <li><Link className='text-white' to={'/destination'}>01 Destination</Link></li>
                 <li><a className='text-white' href="#">02 Crew</a></li>
                 <li><a className='text-white' href="#">03 Technology</a></li>
             </ul>

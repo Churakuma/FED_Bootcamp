@@ -59,20 +59,24 @@
 // Desktop Display
 @media (min-width: 1024px) {
     .subtitle {
-        font-family: $ff-sans-cond;
-        font-weight: 400;
         font-size: $fs-500;
-        color: $clr-light;
-        text-align: center;
-        letter-spacing: 2.7px;
+        letter-spacing: 0.3rem;
     }
 
     .title {
-        font-family: $ff-serif;
-        font-weight: 400;
         font-size: $fs-900;
-        color: $clr-white;
-        text-align: center;
-        letter-spacing: 4.75px;
+        text-align: left;
+        letter-spacing: 1.5rem;
+    }
+
+    .text {
+        font-size: $fs-400;
+        text-align: left;
+    }
+
+    .text-container {
+        width: 35rem;
+        margin: 1rem 1rem;
+        padding: 0;
     }
 }

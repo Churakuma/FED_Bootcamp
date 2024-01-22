@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../assets/shared/logo.svg'
 import './Header.scss'
 import SideMenu from '../SideMenu/SideMenu';
@@ -28,7 +29,7 @@ const Header = () => {
                 ): (
                     <div className='top-nav'>
                         <ul className='flex tabs-list'>
-                            <li><a>Home</a></li>
+                            <li><Link to={'./destination'}>Home</Link></li>
                             <li><a>Destination</a></li>
                             <li><a>Crew</a></li>
                             <li><a>Technology</a></li>

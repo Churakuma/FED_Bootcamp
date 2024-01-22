@@ -22,6 +22,10 @@
   margin-top: 6rem;
 }
 
+header {
+  justify-content: space-between;
+}
+
 .logo {
   width: 2.5rem;
   height: 2.5rem;
@@ -72,6 +76,7 @@
     height: 6rem;
     padding: 0;
     margin-bottom: 0;
+    flex-shrink: 1;
   }
 
   header {

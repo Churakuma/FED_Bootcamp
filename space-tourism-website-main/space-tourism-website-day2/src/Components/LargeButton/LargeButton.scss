@@ -1,33 +1,64 @@
-@import url('../../GlobalStyles.scss');
+@import '../../GlobalStyles.scss';
+
+// .large-button {
+//     font-size: 2rem;
+//     position: relative;
+//     z-index: 1;
+//     display: inline-grid;
+//     place-items: center;
+//     padding: 0 2em;
+//     border-radius: 50%;
+//     aspect-ratio: 1;
+//     text-decoration: none;
+//     border: none;  
+//     //TODO:  Insert media query for desktop and tablet
+
+//     &::after {
+//       content: '';
+//       position: absolute;
+//       z-index: -1;
+//       width: 100%;
+//       height: 100%;
+//       background: hsl(var($clr-light) / .1);
+//       border-radius: 50%;
+//       opacity: 0;
+//       transition: opacity 500ms linear, transform 750ms ease-in-out;
+//     }
+  
+//     &:hover::after {
+//       opacity: 1;
+//       transform: scale(1.5);
+//     }
+// }
 
 .large-button {
-    font-size: 2rem;
+    font-size: $fs-500;
     position: relative;
     z-index: 1;
     display: inline-grid;
     place-items: center;
-    padding: 0 2em;
+    padding: 0 1em;
     border-radius: 50%;
     aspect-ratio: 1;
     text-decoration: none;
-    border: none;  
-    //TODO:  Insert media query for desktop and tablet
-
-    &::after {
-      content: '';
-      position: absolute;
-      z-index: -1;
-      width: 100%;
-      height: 100%;
-      background: hsl(var(--clr-white) / .1);
-      border-radius: 50%;
-      opacity: 0;
-      transition: opacity 500ms linear, transform 750ms ease-in-out;
-    }
-  
-    &:hover::after {
-      opacity: 1;
-      transform: scale(1.5);
-    }
+    border: none; 
 }
-  
+
+/* --------------------  */
+/* Media Queries         */
+/* --------------------  */
+
+// Tablet
+@media (min-width: 426px) {
+  .large-button {
+    font-size: $fs-650;
+  }
+}
+
+
+// Desktop
+@media (min-width: 1024px) {
+  .large-button {
+    font-size: $fs-700;
+  }
+}

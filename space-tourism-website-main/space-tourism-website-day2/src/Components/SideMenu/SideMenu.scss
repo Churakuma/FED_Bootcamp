@@ -1,12 +1,14 @@
-@import url('../../GlobalStyles.scss');
+@import '../../GlobalStyles.scss';
+
 // TODO: Try figure out another way to position the navIcon
 .navIcon {
     width: 55px;
     display: flex;
     top: 1rem;  
     position: relative;
-    margin-left: 17rem;
+    justify-content: space-between;
     z-index: 10;
+    margin-right: 1.5rem;
 }
 
 .sideMenu {

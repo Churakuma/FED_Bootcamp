@@ -1,4 +1,4 @@
-@import url('../../GlobalStyles.scss');
+@import '../../GlobalStyles.scss';
 
 .home {
     background-size: cover;
@@ -8,7 +8,7 @@
     height: 100%;
 
     // Tablet
-    @media (min-width: 425px) {
+    @media (min-width: 426px) {
         background-position: center center;        
         background-image: url(../assets/home/background-home-tablet.jpg);
     }
@@ -17,4 +17,14 @@
     @media (min-width: 1024px) {
         background-image: url(../assets/home/background-home-desktop.jpg);
     }
+}
+
+.horizontal-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: 382px;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 15rem;
 }

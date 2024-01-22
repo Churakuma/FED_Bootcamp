@@ -1,0 +1,24 @@
+@import '../../GlobalStyles.scss';
+
+div {
+    justify-content: center;
+    align-items: center;
+}
+
+.page-counter, 
+.subtitle-text {
+    padding: 2rem 0rem;
+}
+
+.page-counter {
+    color: rgba($color: $clr-white, $alpha: 0.25);
+    font-size: $fs-300;
+    font-family: $ff-sans-cond;
+}
+
+.subtitle-text {
+    font-family: $ff-sans-cond;
+    font-size: $fs-300;
+    font-weight: 200;
+    color: $clr-white;
+}

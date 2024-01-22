@@ -14,10 +14,8 @@ const TextHome = () => {
                 because we’ll give you a truly out of this world experience!
             </p>
         </div>
-            
         </>
     )
-    
 }
 
 export default TextHome;

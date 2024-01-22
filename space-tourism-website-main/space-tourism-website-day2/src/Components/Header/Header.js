@@ -3,27 +3,6 @@ import logo from '../assets/shared/logo.svg'
 import './Header.scss'
 import SideMenu from '../SideMenu/SideMenu';
 
-// const Header = () => {
-//     const isSideMenuDisabled = window.matchMedia('(max-width: 425px)').matches
-//     if (isSideMenuDisabled) {
-//     }
-//     return (
-//         <>
-//             <header className='flex text-white uppercase ff-sans-cond letter-spacing-2'>
-//                 <img className='logo' alt='Space Tourism Logo' src={logo}/>
-//                 {isSideMenuDisabled ? (
-//                     <SideMenu></SideMenu>
-//                 ): (
-//                     <div></div>
-//                 )}
-
-//             </header>
-//         </>
-//     )
-// }
-
-// export default Header;
-
 const Header = () => {
     const [isSideMenuDisabled, setIsSideMenuDisabled] = useState(window.matchMedia('(max-width: 426px)').matches);
 //TODO: Ask Gary about the behavior where 426 includes the navicon but 425px does not?
@@ -47,7 +26,14 @@ const Header = () => {
                 {isSideMenuDisabled ? (
                     <SideMenu></SideMenu>
                 ): (
-                    <div></div>
+                    <div className='top-nav'>
+                        <ul className='flex tabs-list'>
+                            <li><a>Home</a></li>
+                            <li><a>Destination</a></li>
+                            <li><a>Crew</a></li>
+                            <li><a>Technology</a></li>
+                        </ul>
+                    </div>
                 )}
             </header>
         </>

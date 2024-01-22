@@ -1,16 +1,17 @@
-@import url('../../GlobalStyles.scss');
+@import '../../GlobalStyles.scss';
 
-.primary-navigation-bar {
-  align-items: center;
-  padding: 50px 0 50px 0;
-  margin: 0;
-  flex-wrap: nowrap;
-  position: relative;
-  width: 100%;
-  background-color: bg-dark;
-}
+// .primary-navigation-bar {
+//   align-items: center;
+//   padding: 50px 0 50px 0;
+//   margin: 0;
+//   flex-wrap: nowrap;
+//   position: relative;
+//   width: 100%;
+//   background-color: bg-dark;
+// }
 
 .tabs-list {
+  font-family: $ff-sans-cond;
   width: 51.9rem;
   height: 100%;
   backdrop-filter: blur(1.5rem);
@@ -35,7 +36,50 @@
 /* --------------------  */
 
 // Tablet
+// TODO: Try get the background to blur for the top right
+@media (min-width: 426px) {
+  .tabs-list {
+    flex-direction: row;
+    width: 28rem;
+    margin-top: auto;
+    height: 6rem;
+    padding: 0;
+    margin-bottom: 0;
+  }
 
+  header {
+    justify-content: space-between;
+  }
+
+  .top-nav {
+    float: right;
+    backdrop-filter: blur(40);
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .tabs-list a {
+    font-size: $fs-200;
+    font-weight: 100;
+  }
+}
 
 // Desktop
+@media (min-width: 1024px) {
+  .tabs-list {
+    flex-direction: row;
+    width: 52rem;
+    margin-top: auto;
+    height: 6rem;
+    padding: 0;
+    margin-bottom: 0;
+  }
 
+  header {
+    padding-top: 2.5rem;
+  }
+
+  .logo {
+    width: 3rem;
+    height: 3rem;
+  }
+}

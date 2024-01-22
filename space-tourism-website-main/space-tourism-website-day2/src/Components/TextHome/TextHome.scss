@@ -34,26 +34,29 @@
     padding: 3rem 1.5rem;
 }
 
+// Tablet Display
 @media (min-width: 426px) {
     .subtitle {
-        font-family: $ff-sans-cond;
-        font-weight: 400;
         font-size: $fs-400;
-        color: $clr-light;
-        text-align: center;
-        letter-spacing: 2.7px;
     }
 
     .title {
-        font-family: $ff-serif;
-        font-weight: 400;
+        // TODO: Look at why SPACE is offset slight right
         font-size: $fs-900;
-        color: $clr-white;
-        text-align: center;
-        letter-spacing: 4.75px;
+    }
+
+    .text {
+        font-size: $fs-300;
+    }
+
+    .text-container {
+        width: 450px;
+        margin: 0 auto;
+        padding: 6rem 0rem;
     }
 }
 
+// Desktop Display
 @media (min-width: 1024px) {
     .subtitle {
         font-family: $ff-sans-cond;

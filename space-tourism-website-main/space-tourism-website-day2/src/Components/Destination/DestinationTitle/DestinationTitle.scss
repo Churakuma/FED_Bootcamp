@@ -1,0 +1,17 @@
+@import '../../../GlobalStyles.scss';
+
+.destination-title {
+    font-family: $ff-serif;
+    font-size: $fs-700;
+    font-weight: 200;
+
+    // Tablet
+    @media (min-width: 426px) {
+        font-size: $fs-750;
+    }
+
+    // Desktop
+    @media (min-width: 1024px) {
+        font-size: $fs-800;
+    }
+}

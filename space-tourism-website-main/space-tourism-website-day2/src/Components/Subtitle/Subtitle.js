@@ -6,7 +6,7 @@ const Subtitle = ({ pageNumber, subtitleText }) => {
         <>
             <div className="flex">
                 <h5 className="page-counter">{pageNumber}</h5>
-                <h5 className="subtitle-text">{subtitleText}</h5>
+                <h5 className="subtitle-text uppercase">{subtitleText}</h5>
             </div>        
         </>
     )

@@ -1,0 +1,17 @@
+@import '../../../GlobalStyles.scss';
+
+.destination-subheading-one {
+    font-size: $fs-200;
+    font-family: $ff-sans-cond;
+    font-weight: 100;
+}
+
+.destination-subheading-two {
+    font-size: $fs-500;
+    font-family: $ff-serif;
+    font-weight: 200;
+}
+
+.destination-subheading-container {
+    margin: 0.5rem 2rem;
+}

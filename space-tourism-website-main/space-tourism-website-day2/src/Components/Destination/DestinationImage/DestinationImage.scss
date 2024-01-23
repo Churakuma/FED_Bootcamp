@@ -1,0 +1,18 @@
+@import '../../../GlobalStyles.scss';
+
+.destination-image {
+    height: 12rem;
+    width: 12rem;
+
+    // Tablet
+    @media(min-width: 426px) {
+        height: 22rem;
+        width: 22rem;
+    }
+
+    // Desktop
+    @media (min-width: 1024) {
+        height: 38rem;
+        width: 38rem;
+    }
+}

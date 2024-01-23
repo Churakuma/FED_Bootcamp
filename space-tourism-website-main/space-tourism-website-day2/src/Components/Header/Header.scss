@@ -22,6 +22,16 @@
   margin-top: 6rem;
 }
 
+.tabs-list a {
+  text-decoration: none;
+  color: white;
+}
+
+.tabs-list a:visited {
+  text-decoration: none;
+  color: white;
+}
+
 header {
   justify-content: space-between;
 }

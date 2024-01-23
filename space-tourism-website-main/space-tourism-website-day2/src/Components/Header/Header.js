@@ -29,9 +29,9 @@ const Header = () => {
                 ): (
                     <div className='top-nav'>
                         <ul className='flex tabs-list'>
-                            <li><Link to={'./destination'}>Home</Link></li>
-                            <li><a>Destination</a></li>
-                            <li><a>Crew</a></li>
+                            <li><Link to={'/'}>Home</Link></li>
+                            <li><Link to={'/destination'}>Destination</Link></li>
+                            <li><Link to={'/crew'}>Crew</Link></li>
                             <li><a>Technology</a></li>
                         </ul>
                     </div>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Header from "../Header/Header";
 import Subtitle from '../Subtitle/Subtitle';
-import moonImage from '../assets/destination/image-moon.png'
-import './Destination.scss'
+import marsImage from '../assets/destination/image-mars.png'
+import './DestinationMars.scss'
 import DestinationImage from './DestinationImage/DestinationImage';
 import DestinationNavList from './DestinationNavList/DestinationNavList';
 import DestinationTitle from './DestinationTitle/DestinationTitle';
@@ -32,14 +32,14 @@ const Destination = ({destination}) => {
                     <>
                         <Header></Header>
                         <Subtitle pageNumber={'01'} subtitleText={'Pick your destination'}></Subtitle>
-                        <DestinationImage destinationImageAltText={"The Moon"} destinationImageSrc={moonImage}></DestinationImage>
+                        <DestinationImage destinationImageAltText={"The planet Mars"} destinationImageSrc={marsImage}></DestinationImage>
                         <DestinationNavList></DestinationNavList>
-                        <DestinationTitle destinationName={"Moon"}></DestinationTitle>
-                        <DestinationText text={"See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites."}></DestinationText>
+                        <DestinationTitle destinationName={"Mars"}></DestinationTitle>
+                        <DestinationText text={"Don’t forget to pack your hiking boots. You’ll need them to tackle Olympus Mons, the tallest plaetary mountain in our solar system. It’s two and a half times the size of Everest!"}></DestinationText>
                         <div className='destination-divider'></div>
                         <div className='flex data-container'>
-                            <DestinationData subheadingOne={"Avg. Distance"} subheadingTwo={"384,000 km"}></DestinationData>
-                            <DestinationData subheadingOne={"Est. Travel Time"} subheadingTwo={"3 days"}></DestinationData>
+                            <DestinationData subheadingOne={"Avg. Distance"} subheadingTwo={"225 MIL. KM"}></DestinationData>
+                            <DestinationData subheadingOne={"Est. Travel Time"} subheadingTwo={"9 Months"}></DestinationData>
                         </div>
                         
                     </>

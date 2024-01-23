@@ -1,10 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import Header from "../Header/Header";
-import "./BodyHome.scss"
-import LargeButton from "../LargeButton/LargeButton";
-import TextHome from "../TextHome/TextHome";
+import Subtitle from '../Subtitle/Subtitle';
+import DouglasHurleyImg from '../assets/crew/image-douglas-hurley.png'
+import './Crew.scss'
 
-const BodyHome = () => {
+const Destination = ({destination}) => {
+    
     const [isDisplayVertical, setIsDisplayVertical] = useState(window.matchMedia('(max-width: 1023px)').matches);
 //TODO: Ask Gary about the behavior where 426 includes the navicon but 425px does not?
     useEffect(() => {
@@ -19,31 +20,21 @@ const BodyHome = () => {
             window.removeEventListener('resize', handleResize);
         };
     }, []); // Empty dependency array ensures the effect runs only once during mount
-
-
     return (
-        <div className="bg-dark home scrolling">
+        <div className="bg-dark destination scrolling">
             <>
                 {isDisplayVertical ? (
                     <>
                         <Header></Header>
-                        <TextHome></TextHome>
-                        <LargeButton></LargeButton>
+                        <Subtitle pageNumber={'02'} subtitleText={'Meet your crew'}></Subtitle>                        
                     </>
-                ): (
+                ) : (
                     <>
-                        <Header></Header>
-                        <div className='horizontal-display'>
-                            <TextHome></TextHome>
-                            <LargeButton></LargeButton>
-                        </div>
-                        
                     </>
                 )}
-                
             </>
         </div>
     )
 }
 
-export default BodyHome;
+export default Destination;

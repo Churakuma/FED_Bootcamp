@@ -1,0 +1,32 @@
+@import '../../../GlobalStyles.scss';
+
+// TODO: COMPLETE THE MEDIA QUERY FOR DESKTOPS
+
+.destination-text-container {
+    padding: 0.5rem 2rem;
+
+    // Tablet
+    @media (min-width: 426px) {
+        padding: 1rem 6rem;
+    }
+
+    // Desktop
+    @media (min-width: 426px) {
+        padding: 1rem 6rem;
+    }
+}
+
+.destination-text-container p {
+    font-size: $fs-200;
+    font-family: $ff-sans-cond;
+
+    // Tablet
+    @media (min-width: 426px) {
+        font-size: $fs-300;
+    }
+
+    // Desktop
+    @media (min-width: 426px) {
+        padding: 1rem 6rem;
+    }
+}

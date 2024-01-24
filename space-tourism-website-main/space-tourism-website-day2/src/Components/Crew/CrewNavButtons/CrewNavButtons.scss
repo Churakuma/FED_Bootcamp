@@ -1,0 +1,21 @@
+@import '../../../GlobalStyles.scss';
+
+.navigation-button {
+    display: flex;
+    margin-top: 2rem;
+  }
+  
+  .circle {
+    width: 0.625rem;
+    height: 0.625rem;
+    border-radius: 50%;
+    background-color: rgba(30, 31, 39, 0.8);
+    margin-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .circle.active {
+    background-color: white;
+  }
+  

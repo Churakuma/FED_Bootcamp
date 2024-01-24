@@ -59,7 +59,7 @@ export default function SideMenu() {
             <ul className='tabs-list'>
                 <li><Link className='text-white' to={'/'}>00 Home</Link></li>
                 <li><Link className='text-white' to={'/destination'}>01 Destination</Link></li>
-                <li><Link className='text-white' to={''}>02 Crew</Link></li>
+                <li><Link className='text-white' to={'/crew'}>02 Crew</Link></li>
                 <li><Link className='text-white' href="#">03 Technology</Link></li>
             </ul>
         </div>

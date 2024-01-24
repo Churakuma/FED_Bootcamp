@@ -1,0 +1,43 @@
+@import '../../../GlobalStyles.scss';
+
+.crew-name, 
+.crew-role {
+    font-family: $ff-serif;
+    line-height: 0.7;
+    font-weight: 100;
+}
+
+.crew-role {
+    font-size: $fs-200;
+    color: rgba($color: $clr-white, $alpha: 0.25);
+
+    // Tablet
+    @media (min-width:426px) {
+        font-size: $fs-450;
+    }
+
+    // Desktop
+    @media (min-width: 1024px) {
+        font-size: $fs-600;
+    }
+}
+
+.crew-name {
+    font-size: $fs-450;
+
+    // Tablet
+    @media (min-width:426px) {
+        font-size: $fs-650;
+    }
+
+    // Desktop
+    @media (min-width: 1024px) {
+        font-size: $fs-700;
+    }
+}
+
+.title-container {
+    flex-direction: column;
+    margin-top: 1rem;
+    // Potentially change margin depending on nav buttons above
+}

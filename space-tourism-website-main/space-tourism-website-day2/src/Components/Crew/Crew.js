@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import CrewTitle from './CrewTitle/CrewTitle';
 import './Crew.scss'
-import CrewImage from './CrewImage/CrewImage';
-import CrewNavButtons from './CrewNavButtons/CrewNavButtons'
 import CrewText from './CrewText/CrewText';
 
 const Crew = ({
@@ -28,9 +26,6 @@ const Crew = ({
             <>
                 {isDisplayVertical ? (
                     <>
-                        {/* <CrewImage crewImageAltText={'Image of Crew Member'} crewImageSrc={image}></CrewImage>
-                        <div className='crew-divider'></div>
-                        <CrewNavButtons></CrewNavButtons> */}
                         <CrewTitle crewRole={role} crewName={name}></CrewTitle>
                         <CrewText text={bio}></CrewText>
                     </>

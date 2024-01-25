@@ -8,7 +8,7 @@ export default function CrewImage({
     return (
         <>
             <div className="flex crew-image-container">
-                <img className="crew-image" alt={crewImageAltText} src={crewImageSrc}></img>
+                <img className="crew-image" alt={crewImageAltText} src={`${crewImageSrc}`}></img>
             </div>
         </>
     )

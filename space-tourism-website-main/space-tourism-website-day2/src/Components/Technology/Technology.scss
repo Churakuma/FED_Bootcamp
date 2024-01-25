@@ -1,0 +1,31 @@
+@import '../../GlobalStyles.scss';
+
+.technology {
+    background-size: cover;
+    background-position: bottom center;
+    flex-shrink: 0;
+    height: 100%;
+    background-image: url(../assets/technology/background-technology-mobile.jpg);
+
+    // Tablet
+    @media (min-width: 426px) {
+        background-position: center center;
+        background-image: url(../assets/technology/background-technology-tablet.jpg);
+    }
+
+    // Desktop
+    @media (min-width: 1024px) {
+        background-image: url(../assets/technology/background-technology-desktop.jpg);
+    }
+}
+
+.crew-divider {
+    height: 1px;
+    background-color: rgba(56, 59, 75, 1);
+    margin: 0rem 2rem;
+
+    // Hide div on larger screen sizes
+    @media (min-width:426px) {
+        display: none;
+    }
+}

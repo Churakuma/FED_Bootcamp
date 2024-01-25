@@ -18,7 +18,7 @@ const CrewLayout = () => {
 
     // State variables to store crew details
     const [crewName, setName] = useState('');
-    let [crewImage, setImage] = useState('');
+    let crewImage = useState('');
     const [crewRole, setRole] = useState('');
     const [crewBio, setBio] = useState('');
 

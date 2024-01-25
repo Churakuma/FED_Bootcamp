@@ -60,7 +60,7 @@ export default function SideMenu() {
                 <li><Link className='text-white' to={'/'}>00 Home</Link></li>
                 <li><Link className='text-white' to={'/destination'}>01 Destination</Link></li>
                 <li><Link className='text-white' to={'/crew'}>02 Crew</Link></li>
-                <li><Link className='text-white' href="#">03 Technology</Link></li>
+                <li><Link className='text-white' to={'/Technology'}>03 Technology</Link></li>
             </ul>
         </div>
     </>

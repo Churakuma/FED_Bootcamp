@@ -1,0 +1,18 @@
+@import '../../../GlobalStyles.scss';
+
+.technology-image {
+    height: 13.875rem;
+    width: 100%;
+
+    // Tablet
+    @media (min-width: 426px) {
+        height: 35.75rem;
+        width: 28.52325rem;
+    }
+
+    // Desktop
+    @media (min-width: 1024px) {
+        height: 44.5rem;
+        width: 35.5045rem;
+    }
+}

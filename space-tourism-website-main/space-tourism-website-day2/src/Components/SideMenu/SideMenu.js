@@ -57,7 +57,7 @@ export default function SideMenu() {
 
         <div className="sideMenu ff-sans-cond" style={{ right: isSideMenu ? '0px' : '-262px' }}>
             <ul className='tabs-list'>
-                <li><Link className='text-white' to={'/'}>00 Home</Link></li>
+                <li><Link className='text-white' to={'/FED_Bootcamp'}>00 Home</Link></li>
                 <li><Link className='text-white' to={'/destination'}>01 Destination</Link></li>
                 <li><Link className='text-white' to={'/crew'}>02 Crew</Link></li>
                 <li><Link className='text-white' to={'/Technology'}>03 Technology</Link></li>

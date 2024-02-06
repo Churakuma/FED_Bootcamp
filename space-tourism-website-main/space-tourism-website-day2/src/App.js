@@ -15,7 +15,7 @@ function App() {
     <div className="App">
       <Router>
         <Routes>
-          <Route path='/' exact element={<BodyHome />}></Route>
+          <Route path='/FED_Bootcamp' exact element={<BodyHome />}></Route>
           <Route path='destination' element={<Destination />}></Route>
           <Route path='destination-mars' element={<DestinationMars />}></Route>
           <Route path='destination-europa' element={<DestinationEuropa />}></Route>
